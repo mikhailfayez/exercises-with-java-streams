@@ -10,7 +10,7 @@ class BoardGameTest {
     @Test
     public void should_throw_exception_because_of_wrong_price() {
         try {
-            new BoardGame(-10,2,6,"Carcassone", 8);
+            new BoardGame(-5,2,6,"Carcassone", 8);
             fail("Exception wasn't thrown!");
         } catch (IllegalArgumentException exception) {
             assertEquals("price can't be lower than 0$", exception.getMessage());
